@@ -8,12 +8,12 @@ function destructivelyAddElementToBeginningOfArray (arr, elem) {
   return arr;
 }
 function addElementToEndOfArray (arr, elem) {
-  newArr = arr.push(elem);
-  return newArr;
+   arr[arr.length - 1] = elem;
+  return arr;
 } //always having problems...
 function destructivelyAddElementToEndOfArray (arr, elem) {
-  arr[arr.length - 1] = elem;
-  return arr;
+ newArr = arr.push(elem);
+  return newArr;
 }
 function accessElementInArray (arr, ind) {
   return arr[ind];
