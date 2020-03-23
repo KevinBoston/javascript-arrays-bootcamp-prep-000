@@ -12,7 +12,7 @@ function addElementToEndOfArray (arr, elem) {
   return newArr;
 }
 function destructivelyAddElementToEndOfArray (arr, elem) {
-  arr[3] = elem;
+  arr[arr.length - 1] = elem;
   return arr;
 }
 function accessElementInArray (arr, ind) {
