@@ -8,7 +8,7 @@ function destructivelyAddElementToBeginningOfArray (arr, elem) {
   return arr;
 }
 function addElementToEndOfArray (arr, elem) {
-   arr[arr.length - 1] = elem;
+   arr = [arr, ... elem];
   return arr;
 } //always having problems...
 function destructivelyAddElementToEndOfArray (arr, elem) {
